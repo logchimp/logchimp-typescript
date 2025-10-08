@@ -1,0 +1,56 @@
+{
+  "dxt_version": "0.2",
+  "name": "logchimp-mcp",
+  "version": "0.0.1",
+  "description": "The official MCP Server for the Logchimp API",
+  "author": {
+    "name": "Logchimp",
+    "email": "logchimp@codecarrot.net"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stainless-sdks/logchimp-typescript.git"
+  },
+  "homepage": "https://github.com/stainless-sdks/logchimp-typescript/tree/main/packages/mcp-server#readme",
+  "server": {
+    "type": "node",
+    "entry_point": "index.js",
+    "mcp_config": {
+      "command": "node",
+      "args": ["${__dirname}/index.js"],
+      "env": {
+        "LOGCHIMP_API_KEY": "${user_config.LOGCHIMP_API_KEY}",
+        "LOGCHIMP_PROTOCOL": "${user_config.LOGCHIMP_PROTOCOL}",
+        "LOGCHIMP_HOST_WITH_PORT": "${user_config.LOGCHIMP_HOST_WITH_PORT}"
+      }
+    }
+  },
+  "user_config": {
+    "LOGCHIMP_API_KEY": {
+      "title": "api_key",
+      "description": "JWT Bearer token authentication",
+      "required": true,
+      "type": "string"
+    },
+    "LOGCHIMP_PROTOCOL": {
+      "title": "protocol",
+      "description": "",
+      "required": true,
+      "type": "string"
+    },
+    "LOGCHIMP_HOST_WITH_PORT": {
+      "title": "host-with-port",
+      "description": "",
+      "required": true,
+      "type": "string"
+    }
+  },
+  "tools": [],
+  "tools_generated": true,
+  "compatibility": {
+    "runtimes": {
+      "node": ">=18.0.0"
+    }
+  },
+  "keywords": ["api"]
+}
