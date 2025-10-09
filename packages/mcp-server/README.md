@@ -9,7 +9,7 @@ It is generated with [Stainless](https://www.stainless.com/).
 Because it's not published yet, clone the repo and build it:
 
 ```sh
-git clone git@github.com:stainless-sdks/logchimp-typescript.git
+git clone git@github.com:logchimp/logchimp-typescript.git
 cd logchimp-typescript
 ./scripts/bootstrap
 ./scripts/build
