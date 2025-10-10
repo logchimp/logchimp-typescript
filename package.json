@@ -1,5 +1,5 @@
 {
-  "name": "logchimp",
+  "name": "@logchimp/sdk",
   "version": "0.0.1",
   "description": "The official TypeScript library for the Logchimp API",
   "author": "Logchimp <logchimp@codecarrot.net>",

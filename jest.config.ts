@@ -7,8 +7,8 @@ const config: JestConfigWithTsJest = {
     '^.+\\.(t|j)sx?$': ['@swc/jest', { sourceMaps: 'inline' }],
   },
   moduleNameMapper: {
-    '^logchimp$': '<rootDir>/src/index.ts',
-    '^logchimp/(.*)$': '<rootDir>/src/$1',
+    '^@logchimp/sdk$': '<rootDir>/src/index.ts',
+    '^@logchimp/sdk/(.*)$': '<rootDir>/src/$1',
   },
   modulePathIgnorePatterns: [
     '<rootDir>/ecosystem-tests/',

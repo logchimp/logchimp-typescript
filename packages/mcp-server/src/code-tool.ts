@@ -2,7 +2,7 @@
 
 import { dirname } from 'node:path';
 import { pathToFileURL } from 'node:url';
-import Logchimp, { ClientOptions } from 'logchimp';
+import Logchimp, { ClientOptions } from '@logchimp/sdk';
 import { Endpoint, ContentBlock, Metadata } from './tools/types';
 
 import { Tool } from '@modelcontextprotocol/sdk/types.js';

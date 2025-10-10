@@ -1,6 +1,6 @@
 // File generated from our OpenAPI spec by Stainless. See CONTRIBUTING.md for details.
 
-import Logchimp from 'logchimp';
+import Logchimp from '@logchimp/sdk';
 
 const client = new Logchimp({
   apiKey: 'My API Key',

@@ -8,8 +8,8 @@
     "moduleResolution": "node",
     "esModuleInterop": true,
     "paths": {
-      "logchimp/*": ["./src/*"],
-      "logchimp": ["./src/index.ts"]
+      "@logchimp/sdk/*": ["./src/*"],
+      "@logchimp/sdk": ["./src/index.ts"]
     },
     "noEmit": true,
 

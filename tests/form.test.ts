@@ -1,5 +1,5 @@
-import { multipartFormRequestOptions, createForm } from 'logchimp/internal/uploads';
-import { toFile } from 'logchimp/core/uploads';
+import { multipartFormRequestOptions, createForm } from '@logchimp/sdk/internal/uploads';
+import { toFile } from '@logchimp/sdk/core/uploads';
 
 describe('form data validation', () => {
   test('valid values do not error', async () => {
