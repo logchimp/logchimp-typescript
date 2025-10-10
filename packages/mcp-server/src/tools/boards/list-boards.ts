@@ -4,7 +4,7 @@ import { maybeFilter } from 'logchimp-mcp/filtering';
 import { Metadata, asTextContentResult } from 'logchimp-mcp/tools/types';
 
 import { Tool } from '@modelcontextprotocol/sdk/types.js';
-import Logchimp from 'logchimp';
+import Logchimp from '@logchimp/sdk';
 
 export const metadata: Metadata = {
   resource: 'boards',

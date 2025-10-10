@@ -1,7 +1,7 @@
 import iconv from 'iconv-lite';
-import { stringify } from 'logchimp/internal/qs';
-import { encode } from 'logchimp/internal/qs/utils';
-import { StringifyOptions } from 'logchimp/internal/qs/types';
+import { stringify } from '@logchimp/sdk/internal/qs';
+import { encode } from '@logchimp/sdk/internal/qs/utils';
+import { StringifyOptions } from '@logchimp/sdk/internal/qs/types';
 import { empty_test_cases } from './empty-keys-cases';
 import assert from 'assert';
 

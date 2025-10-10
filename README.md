@@ -1,6 +1,6 @@
 # Logchimp TypeScript API Library
 
-[![NPM version](<https://img.shields.io/npm/v/logchimp.svg?label=npm%20(stable)>)](https://npmjs.org/package/logchimp) ![npm bundle size](https://img.shields.io/bundlephobia/minzip/logchimp)
+[![NPM version](<https://img.shields.io/npm/v/@logchimp/sdk.svg?label=npm%20(stable)>)](https://npmjs.org/package/@logchimp/sdk) ![npm bundle size](https://img.shields.io/bundlephobia/minzip/@logchimp/sdk)
 
 This library provides convenient access to the Logchimp REST API from server-side TypeScript or JavaScript.
 
@@ -11,11 +11,8 @@ It is generated with [Stainless](https://www.stainless.com/).
 ## Installation
 
 ```sh
-npm install git+ssh://git@github.com:stainless-sdks/logchimp-typescript.git
+npm install @logchimp/sdk
 ```
-
-> [!NOTE]
-> Once this package is [published to npm](https://www.stainless.com/docs/guides/publish), this will become: `npm install logchimp`
 
 ## Usage
 
@@ -23,7 +20,7 @@ The full API of this library can be found in [api.md](api.md).
 
 <!-- prettier-ignore -->
 ```js
-import Logchimp from 'logchimp';
+import Logchimp from '@logchimp/sdk';
 
 const client = new Logchimp();
 
@@ -38,7 +35,7 @@ This library includes TypeScript definitions for all request params and response
 
 <!-- prettier-ignore -->
 ```ts
-import Logchimp from 'logchimp';
+import Logchimp from '@logchimp/sdk';
 
 const client = new Logchimp();
 
@@ -163,7 +160,7 @@ The log level can be configured in two ways:
 2. Using the `logLevel` client option (overrides the environment variable if set)
 
 ```ts
-import Logchimp from 'logchimp';
+import Logchimp from '@logchimp/sdk';
 
 const client = new Logchimp({
   logLevel: 'debug', // Show all log messages
@@ -191,7 +188,7 @@ When providing a custom logger, the `logLevel` option still controls which messa
 below the configured level will not be sent to your logger.
 
 ```ts
-import Logchimp from 'logchimp';
+import Logchimp from '@logchimp/sdk';
 import pino from 'pino';
 
 const logger = pino();
@@ -260,7 +257,7 @@ globalThis.fetch = fetch;
 Or pass it to the client:
 
 ```ts
-import Logchimp from 'logchimp';
+import Logchimp from '@logchimp/sdk';
 import fetch from 'my-fetch';
 
 const client = new Logchimp({ fetch });
@@ -271,7 +268,7 @@ const client = new Logchimp({ fetch });
 If you want to set custom `fetch` options without overriding the `fetch` function, you can provide a `fetchOptions` object when instantiating the client or making a request. (Request-specific options override client options.)
 
 ```ts
-import Logchimp from 'logchimp';
+import Logchimp from '@logchimp/sdk';
 
 const client = new Logchimp({
   fetchOptions: {
@@ -288,7 +285,7 @@ options to requests:
 <img src="https://raw.githubusercontent.com/stainless-api/sdk-assets/refs/heads/main/node.svg" align="top" width="18" height="21"> **Node** <sup>[[docs](https://github.com/nodejs/undici/blob/main/docs/docs/api/ProxyAgent.md#example---proxyagent-with-fetch)]</sup>
 
 ```ts
-import Logchimp from 'logchimp';
+import Logchimp from '@logchimp/sdk';
 import * as undici from 'undici';
 
 const proxyAgent = new undici.ProxyAgent('http://localhost:8888');
@@ -302,7 +299,7 @@ const client = new Logchimp({
 <img src="https://raw.githubusercontent.com/stainless-api/sdk-assets/refs/heads/main/bun.svg" align="top" width="18" height="21"> **Bun** <sup>[[docs](https://bun.sh/guides/http/proxy)]</sup>
 
 ```ts
-import Logchimp from 'logchimp';
+import Logchimp from '@logchimp/sdk';
 
 const client = new Logchimp({
   fetchOptions: {
@@ -314,7 +311,7 @@ const client = new Logchimp({
 <img src="https://raw.githubusercontent.com/stainless-api/sdk-assets/refs/heads/main/deno.svg" align="top" width="18" height="21"> **Deno** <sup>[[docs](https://docs.deno.com/api/deno/~/Deno.createHttpClient)]</sup>
 
 ```ts
-import Logchimp from 'npm:logchimp';
+import Logchimp from 'npm:@logchimp/sdk';
 
 const httpClient = Deno.createHttpClient({ proxy: { url: 'http://localhost:8888' } });
 const client = new Logchimp({
@@ -336,7 +333,7 @@ This package generally follows [SemVer](https://semver.org/spec/v2.0.0.html) con
 
 We take backwards-compatibility seriously and work hard to ensure you can rely on a smooth upgrade experience.
 
-We are keen for your feedback; please open an [issue](https://www.github.com/stainless-sdks/logchimp-typescript/issues) with questions, bugs, or suggestions.
+We are keen for your feedback; please open an [issue](https://www.github.com/logchimp/logchimp-typescript/issues) with questions, bugs, or suggestions.
 
 ## Requirements
 
