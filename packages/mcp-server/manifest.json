@@ -1,6 +1,6 @@
 {
   "dxt_version": "0.2",
-  "name": "logchimp-mcp",
+  "name": "@logchimp/mcp",
   "version": "0.0.2",
   "description": "The official MCP Server for the Logchimp API",
   "author": {

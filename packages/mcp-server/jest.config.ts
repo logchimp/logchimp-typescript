@@ -7,8 +7,8 @@ const config: JestConfigWithTsJest = {
     '^.+\\.(t|j)sx?$': ['@swc/jest', { sourceMaps: 'inline' }],
   },
   moduleNameMapper: {
-    '^logchimp-mcp$': '<rootDir>/src/index.ts',
-    '^logchimp-mcp/(.*)$': '<rootDir>/src/$1',
+    '^@logchimp/mcp$': '<rootDir>/src/index.ts',
+    '^@logchimp/mcp/(.*)$': '<rootDir>/src/$1',
   },
   modulePathIgnorePatterns: ['<rootDir>/dist/'],
   testPathIgnorePatterns: ['scripts'],

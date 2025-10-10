@@ -1,7 +1,7 @@
 // File generated from our OpenAPI spec by Stainless. See CONTRIBUTING.md for details.
 
-import { maybeFilter } from 'logchimp-mcp/filtering';
-import { Metadata, asTextContentResult } from 'logchimp-mcp/tools/types';
+import { maybeFilter } from '@logchimp/mcp/filtering';
+import { Metadata, asTextContentResult } from '@logchimp/mcp/tools/types';
 
 import { Tool } from '@modelcontextprotocol/sdk/types.js';
 import Logchimp from '@logchimp/sdk';

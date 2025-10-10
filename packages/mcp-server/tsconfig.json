@@ -8,8 +8,8 @@
     "moduleResolution": "node",
     "esModuleInterop": true,
     "paths": {
-      "logchimp-mcp/*": ["./src/*"],
-      "logchimp-mcp": ["./src/index.ts"]
+      "@logchimp/mcp/*": ["./src/*"],
+      "@logchimp/mcp": ["./src/index.ts"]
     },
     "noEmit": true,
 
