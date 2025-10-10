@@ -12,7 +12,7 @@ You can run the MCP Server directly via `npx`:
 export LOGCHIMP_API_KEY="My API Key"
 export LOGCHIMP_PROTOCOL="My-Protocol"
 export LOGCHIMP_HOST_WITH_PORT="My-Host-With-Port"
-npx -y logchimp-mcp@latest
+npx -y @logchimp/mcp@latest
 ```
 
 ### Via MCP Client
@@ -27,7 +27,7 @@ For clients with a configuration JSON, it might look something like this:
   "mcpServers": {
     "logchimp_sdk_api": {
       "command": "npx",
-      "args": ["-y", "logchimp-mcp", "--client=claude", "--tools=all"],
+      "args": ["-y", "@logchimp/mcp", "--client=claude", "--tools=all"],
       "env": {
         "LOGCHIMP_API_KEY": "My API Key",
         "LOGCHIMP_PROTOCOL": "My-Protocol",
@@ -173,10 +173,10 @@ http://localhost:3000?client=cursor&capability=tool-name-length%3D40
 
 ```js
 // Import the server, generated endpoints, or the init function
-import { server, endpoints, init } from "logchimp-mcp/server";
+import { server, endpoints, init } from "@logchimp/mcp/server";
 
 // import a specific tool
-import loginAuth from "logchimp-mcp/tools/auth/login-auth";
+import loginAuth from "@logchimp/mcp/tools/auth/login-auth";
 
 // initialize the server and all endpoints
 init({ server, endpoints });
