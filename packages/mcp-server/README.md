@@ -45,6 +45,22 @@ in Cursor's `mcp.json`, which can be found in Cursor Settings > Tools & MCP > Ne
 
 [![Add to Cursor](https://cursor.com/deeplink/mcp-install-dark.svg)](https://cursor.com/en-US/install-mcp?name=@logchimp/mcp&config=eyJjb21tYW5kIjoibnB4IiwiYXJncyI6WyIteSIsIkBsb2djaGltcC9tY3AiXSwiZW52Ijp7IkxPR0NISU1QX0FQSV9LRVkiOiJTZXQgeW91ciBMT0dDSElNUF9BUElfS0VZIGhlcmUuIiwiTE9HQ0hJTVBfUFJPVE9DT0wiOiJTZXQgeW91ciBMT0dDSElNUF9QUk9UT0NPTCBoZXJlLiIsIkxPR0NISU1QX0hPU1RfV0lUSF9QT1JUIjoiU2V0IHlvdXIgTE9HQ0hJTVBfSE9TVF9XSVRIX1BPUlQgaGVyZS4ifX0)
 
+### VS Code
+
+If you use MCP, you can install the MCP server by clicking the link below. You will need to set your environment variables
+in VS Code's `mcp.json`, which can be found via Command Palette > MCP: Open User Configuration.
+
+[Open VS Code](https://vscode.stainless.com/mcp/%7B%22name%22%3A%22%40logchimp%2Fmcp%22%2C%22command%22%3A%22npx%22%2C%22args%22%3A%5B%22-y%22%2C%22%40logchimp%2Fmcp%22%5D%2C%22env%22%3A%7B%22LOGCHIMP_API_KEY%22%3A%22Set%20your%20LOGCHIMP_API_KEY%20here.%22%2C%22LOGCHIMP_PROTOCOL%22%3A%22Set%20your%20LOGCHIMP_PROTOCOL%20here.%22%2C%22LOGCHIMP_HOST_WITH_PORT%22%3A%22Set%20your%20LOGCHIMP_HOST_WITH_PORT%20here.%22%7D%7D)
+
+### Claude Code
+
+If you use Claude Code, you can install the MCP server by running the command below in your terminal. You will need to set your
+environment variables in Claude Code's `.claude.json`, which can be found in your home directory.
+
+```
+claude mcp add --transport stdio logchimp_sdk_api --env LOGCHIMP_API_KEY="Your LOGCHIMP_API_KEY here." LOGCHIMP_PROTOCOL="Your LOGCHIMP_PROTOCOL here." LOGCHIMP_HOST_WITH_PORT="Your LOGCHIMP_HOST_WITH_PORT here." -- npx -y @logchimp/mcp
+```
+
 ## Exposing endpoints to your MCP Client
 
 There are three ways to expose endpoints as tools in the MCP server:
