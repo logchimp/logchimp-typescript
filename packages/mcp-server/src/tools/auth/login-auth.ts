@@ -45,7 +45,7 @@ export const handler = async (client: Logchimp, args: Record<string, unknown> | 
   try {
     return asTextContentResult(await maybeFilter(jq_filter, await client.auth.login(body)));
   } catch (error) {
-    if (isJqError(error)) {
+    if (error instanceof Logchimp.APIError || isJqError(error)) {
       return asErrorResult(error.message);
     }
     throw error;
