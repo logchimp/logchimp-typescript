@@ -43,6 +43,7 @@ export async function codeTool() {
       },
       body: JSON.stringify({
         project_name: 'logchimp',
+        client_opts: {},
         code,
       }),
     });
