@@ -39,6 +39,7 @@ export async function codeTool() {
           LOGCHIMP_API_KEY: readEnv('LOGCHIMP_API_KEY'),
           LOGCHIMP_PROTOCOL: readEnv('LOGCHIMP_PROTOCOL'),
           LOGCHIMP_HOST_WITH_PORT: readEnv('LOGCHIMP_HOST_WITH_PORT'),
+          LOGCHIMP_BASE_URL: readEnv('LOGCHIMP_BASE_URL'),
         }),
       },
       body: JSON.stringify({
