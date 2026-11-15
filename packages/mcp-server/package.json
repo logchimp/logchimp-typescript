@@ -1,4 +1,5 @@
 {
+  "$schema": "https://json.schemastore.org/package.json",
   "name": "logchimp-mcp",
   "version": "0.0.2",
   "description": "The official MCP Server for the Logchimp API",
